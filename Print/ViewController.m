@@ -45,8 +45,12 @@
     UIPrintInfo *printInfo = [UIPrintInfo printInfo];
     //设置输出类型
     printInfo.outputType = UIPrintInfoOutputGeneral;
+    //横向打印
+    printInfo.orientation = UIPrintInfoOrientationLandscape;
     //显示的页面范围
     printC.showsPageRange = YES;
+    
+    printC.printInfo = printInfo;
     
     //打印页面(网页)
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://http://192.168.0.115/NormalEvaluate.html?evaluateNo=J4181A160217001"]]];
