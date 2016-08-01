@@ -49,7 +49,7 @@
     printC.showsPageRange = YES;
     
     //打印页面(网页)
-    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.baidu.com"]]];
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://http://192.168.0.115/NormalEvaluate.html?evaluateNo=J4181A160217001"]]];
     //布局打印视图绘制的内容
     printC.printFormatter = [self.webView viewPrintFormatter];
     
