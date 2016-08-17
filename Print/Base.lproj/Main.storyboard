@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fbO-M1-agp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fbO-M1-agp">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--打印内容-->
@@ -17,19 +18,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4wN-ad-fhV">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
-                                <animations/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="4wN-ad-fhV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="R5v-7P-IFd"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4wN-ad-fhV" secondAttribute="bottom" id="S2w-Ja-kmc"/>
                             <constraint firstItem="4wN-ad-fhV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fbA-YG-JKp"/>
                             <constraint firstAttribute="trailing" secondItem="4wN-ad-fhV" secondAttribute="trailing" id="gkc-AK-tIe"/>
+                            <constraint firstItem="4wN-ad-fhV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="kiP-Bv-N2M"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="R5v-7P-IFd"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="打印内容" id="Gh4-QK-Aoe">
                         <barButtonItem key="leftBarButtonItem" title="打印" id="9U0-sJ-I6F">
@@ -54,7 +59,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="RsC-q0-gd9">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
